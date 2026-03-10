@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arena | Social Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet">
+    
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Satoshi', sans-serif;
+            color: white;
+            padding: 20px;
+            /* Update 'bg.jpg' to your downloaded filename */
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), 
+                        url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo-container { margin-bottom: 30px; }
+
+        /* Update 'logo.png' to your downloaded filename */
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 5px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 15px 0 5px 0;
+            font-size: 1.6rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+            padding: 18px 25px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .card:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.15); }
+
+        .card-content { display: flex; align-items: center; gap: 20px; }
+
+        /* ICON STYLES */
+        .fa-brands { font-size: 1.6rem; width: 30px; text-align: center; }
+        
+        /* Official Brand Colors */
+        .fa-instagram { color: #E1306C; }
+        .fa-tiktok { color: #00f2ea; filter: drop-shadow(2px 0px 0px #ff0050); }
+        .fa-facebook { color: #1877F2; }
+
+        .card h3 { margin: 0; font-size: 1.1rem; font-weight: 700; }
+        .card p { margin: 0; font-size: 0.8rem; opacity: 0.5; }
+        .arrow { font-size: 1rem; opacity: 0.2; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Decibel Events</h1>
+        <p style="opacity: 0.6; font-size: 0.9rem;">Follow Us!</p>
+    </div>
+
+    <a href="https://www.instagram.com/decibel.events_?igsh=MTRjamZienJ1b25raQ%3D%3D&utm_source=qr" class="card">
+        <div class="card-content">
+            <i class="fa-brands fa-instagram"></i>
+            <div style="text-align: left;">
+                <h3>Instagram</h3>
+                <p>Follow our highlights</p>
+            </div>
+        </div>
+        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+    </a>
+
+    <a href="https://www.tiktok.com/@decibel.events1?_r=1&_t=ZS-94MLeuAVe1F" class="card">
+        <div class="card-content">
+            <i class="fa-brands fa-tiktok"></i>
+            <div style="text-align: left;">
+                <h3>TikTok</h3>
+                <p>Watch trending videos</p>
+            </div>
+        </div>
+        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+    </a>
+
+    <a href="https://www.instagram.com/decibel.events_?igsh=MTRjamZienJ1b25raQ%3D%3D&utm_source=qr" class="card">
+        <div class="card-content">
+            <i class="fa-brands fa-facebook"></i>
+            <div style="text-align: left;">
+                <h3>Facebook</h3>
+                <p>Get event updates</p>
+            </div>
+        </div>
+        <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+    </a>
+
+</div>
+
+</body>
+</html>
